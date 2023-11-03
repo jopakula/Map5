@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/itemPointConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/spacing"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/item_point_background"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@id/spacing">
+
+        <TextView
+            android:id="@+id/itemPointTitleTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ID: 11000"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/itemPointPositionTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Position: (123.1231, 123.1231)"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/itemPointTitleTv" />
+
+        <TextView
+            android:id="@+id/itemPointTemperatureTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Temperature: 22"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/itemPointPositionTv" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
